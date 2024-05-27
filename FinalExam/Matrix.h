@@ -22,6 +22,7 @@ const double RANDOM_MAX = 4.5;
 void fillWithRandomNum(double mat[MAX_ROW][MAX_COL]);
 void printMatrix(const double mat[MAX_ROW][MAX_COL]);
 double sumPositiveNumbers(const double mat[MAX_ROW][MAX_COL]);
+int countValue(const double mat[MAX_ROW][MAX_COL]);
 
 
 #endif // 

@@ -48,11 +48,21 @@ int main() {
             printMatrix(matrix);
             break;
         case 3:
+        {
             double sum = sumPositiveNumbers(matrix);
             cout << "The sum of all positive numbers in the matrix is: " << sum;
             break;
-        //default:
-        //    cerr << "\nWrong choice";
+        }   
+        case 4:
+        {
+            int count = countValue(matrix);
+            cout << "The amount of all numbers of value 1.5 in the matrix is: " << count;
+            break;
+        }   
+        case 5:
+            exit;
+        default:
+            cerr << "\nWrong choice";
         }
     } while (choice != 0);
 
@@ -67,6 +77,7 @@ void showMenu() {
     cout << "\n1) Fill Matrix with numbers from -0.5 to 4.5";
     cout << "\n2) Show matrix";
     cout << "\n3) Sum of all positive numbers in the matrix";
-    cout << "\n0) Exit";
-    cout << "\nEnter choice: ";
+    cout << "\n4) Sum of all positive numbers in the matrix";
+    cout << "\n5) Exit";
+    cout << "\nPlease enter choice: ";
 }

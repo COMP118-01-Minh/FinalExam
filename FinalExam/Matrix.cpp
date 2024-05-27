@@ -71,3 +71,21 @@ double sumPositiveNumbers(const double mat[MAX_ROW][MAX_COL]){
     assert(j == MAX_COL);
     return sum;
 }
+/**
+* The <code>countValue</code> function that counts all numbers with the value of 1.5 in the matrix.
+* <BR>
+* @param mat The matrix to be shown
+*/
+int countValue(const double mat[MAX_ROW][MAX_COL]) {
+    int i, j;
+    int count = 0;
+    for (i = 0; i < MAX_ROW; ++i) {
+        for (j = 0; j < MAX_COL; ++j)
+            if (mat[i][j] == 1.5)
+                count += 1;
+    }
+    assert(i == MAX_ROW);
+    assert(j == MAX_COL);
+    return count;
+}
+

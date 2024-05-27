@@ -15,8 +15,6 @@
 #include <random>
 
 using namespace std;
-const long max_rand = 1000000L;
-
 
 /**
  * The <code>fillWithRandomNum</code> function initializes the matrix with random numbers,
@@ -26,11 +24,13 @@ const long max_rand = 1000000L;
  */
 void fillWithRandomNum(double mat[MAX_ROW][MAX_COL]) {
     int i, j;
-    uniform_real_distribution<double> unif(RANDOM_MIN, RANDOM_MAX);
-    default_random_engine re;
+
+    default_random_engine gen;
+    uniform_real_distribution<double> distribution(RANDOM_MIN, RANDOM_MAX);
+
     for (i = 0; i < MAX_ROW; ++i) {
         for (j = 0; j < MAX_COL; ++j)
-            mat[i][j] = unif(re);
+            mat[i][j] = distribution(gen);
     }
     assert(i == MAX_ROW);
     assert(j == MAX_COL);

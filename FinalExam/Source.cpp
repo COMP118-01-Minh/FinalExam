@@ -48,11 +48,14 @@ int main() {
             printMatrix(matrix);
             break;
         case 3:
+        {
             double sum = sumPositiveNumbers(matrix);
             cout << "The sum of all positive numbers in the matrix is: " << sum;
             break;
-        //default:
-        //    cerr << "\nWrong choice";
+        }
+            
+        default:
+            cerr << "\nWrong choice";
         }
     } while (choice != 0);
 

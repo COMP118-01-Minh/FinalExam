@@ -36,3 +36,21 @@ void fillWithRandomNum(double mat[MAX_ROW][MAX_COL]) {
     assert(j == MAX_COL);
 }
 
+/**
+ * The <code>printMatrix</code> function shows the content of the matrix.
+ * <BR>
+ * @param mat The matrix to be shown
+ */
+void printMatrix(const double mat[MAX_ROW][MAX_COL]) {
+    int i, j;
+    cout << "\n\nContent of matrix";
+
+    for (i = 0; i < MAX_ROW; ++i) { // add the column identifier at the top
+        cout << "\nRow " << i << ": ";
+        for (j = 0; j < MAX_COL; ++j)
+            cout << mat[i][j] << "\t"; // make it nice by using setw()
+    }
+    cout << endl;
+    assert(i == MAX_ROW);
+    assert(j == MAX_COL);
+}

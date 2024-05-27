@@ -45,6 +45,7 @@ int main() {
             fillWithRandomNum(matrix);
             break;
         case 2:
+            printMatrix(matrix);
             break;
         default:
             cerr << "\nWrong choice";

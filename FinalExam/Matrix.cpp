@@ -54,3 +54,20 @@ void printMatrix(const double mat[MAX_ROW][MAX_COL]) {
     assert(i == MAX_ROW);
     assert(j == MAX_COL);
 }
+/**
+* The <code>sumPositiveNumbers</code> function shows the value of all positive numbers in the matrix.
+* <BR>
+* @param mat The matrix to be shown
+*/
+double sumPositiveNumbers(const double mat[MAX_ROW][MAX_COL]){
+    int i, j;
+    double sum = 0.0;
+    for (i = 0; i < MAX_ROW; ++i) {
+        for (j = 0; j < MAX_COL; ++j)
+            if (mat[i][j] >= 0)
+                sum += mat[i][j];
+    }
+    assert(i == MAX_ROW);
+    assert(j == MAX_COL);
+    return sum;
+}

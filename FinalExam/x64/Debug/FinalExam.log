@@ -1,4 +1,5 @@
-﻿  Matrix.cpp
-  Source.cpp
-  Generating Code...
-  FinalExam.vcxproj -> C:\Users\DELL\source\repos\FinalExam\x64\Debug\FinalExam.exe
+﻿  Source.cpp
+C:\Users\DELL\source\repos\FinalExam\FinalExam\Source.cpp(54,9): error C2361: initialization of 'sum' is skipped by 'default' label
+  C:\Users\DELL\source\repos\FinalExam\FinalExam\Source.cpp(51,20):
+  see declaration of 'sum'
+  
